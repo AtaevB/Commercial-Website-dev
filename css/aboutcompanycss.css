@@ -3,7 +3,7 @@ body{
 	margin: 0;
 	padding: 0;
 	font-family: RobotoThin;
-	background-color: #CCCC;
+	background-color: rgba(214, 214, 214, 0.8);
 
 }
 
@@ -18,8 +18,15 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	padding: 0;
+	transition: background-color 0.3s ease-in-out;
+	z-index: 999;
 	
 }
+
+.translucent {
+	background: rgb(0,31,63);
+	background: linear-gradient(0deg, rgba(0,31,63,0.18671218487394958) 0%, rgba(0,31,63,1) 100%);
+  }
 
 .logo {
 
@@ -216,3 +223,104 @@ footer a{
 	color: #fff;
 	
 }
+
+
+
+
+
+
+
+
+
+
+.baner {
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+  	height: 70vh;
+  	width: 100%;
+	box-shadow: none;
+	z-index: -999;
+	overflow: hidden;
+}
+
+.baner img {
+	position: absolute;
+  	top: 0;
+  	left: 0;
+  	width: 100%;
+  	height: 100%;
+  	object-fit: cover;
+	z-index: -999;
+	transition: transform 3s ease;
+  }
+
+  .baner h1 {
+
+	font-family: OswaldBold;
+	color: #000;
+	text-align: center;
+		
+  }
+
+  @media only screen and (max-width: 1200px) {
+	.baner h1 {
+	  display: none;
+	}
+  }
+
+  .center-text {
+
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	width: 50%;
+  	height: 50%;
+
+  }
+
+  .text-begin{
+
+	position: relative;
+	left: 20%;
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+	color: #fff;
+	width: 60%;
+	height: auto;
+	background-color: #001f3f;
+
+  }
+
+  .text-begin h2{
+
+	padding: 0 10px;
+	text-align: center;
+	font-family: RobotoThin;
+
+  }
+
+  .company-history{
+
+	position: relative;
+	left: 20%;
+	display: flex;
+	color: #000;
+	width: 60%;
+	max-height: 1000%;
+	height: auto;
+	overflow-y: auto;
+	background-color: rgb(207, 207, 207);
+	flex-direction: column;
+
+  }
+
+  .company-history h3{
+	
+	padding: 0 20px;
+	text-align: justify;
+
+  }
