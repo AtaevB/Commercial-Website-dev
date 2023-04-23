@@ -7,6 +7,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/partnerscss.css">
 
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+  
+  	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
 	<style>
 
 		@font-face {
@@ -19,6 +23,11 @@
     	src: url(fonts/Roboto-Thin.ttf); 
    		}
 
+		@font-face {
+			font-family: OswaldBold;
+			src: url(fonts/Oswald-Bold.ttf);
+		}
+
 	</style>
 	
 	
@@ -26,41 +35,204 @@
 
 <body>
 
-	<header>
+	<div class="page">
+	
+		<header id="main-header" class="translucent">
+				
+			<div class="logo">
+				<div id="rotatelogo"><a href="main.html"><img src="pictures/logo11.png" class="logo-img" alt="Logo"></a></div>
+				<a href="main.html"><img src="pictures/logo22.png" class="logo2-img"></a>
+			</div>
+			<nav>
+				<ul id="main-menu">
+					<li><a href="main.html">Главная</a></li>
+					<li><a href="aboutcompany.html">О компании</a>
+						<ul>
+							<li><a href="dropdown_menu/dropdown_about/history.html">История</a></li>
+							<li><a href="dropdown_menu/dropdown_about/archive.html">Архив новостей</a></li>
+							<li><a href="dropdown_menu/dropdown_about/strategy.html">Стратегия и перспективы</a></li>
+							<li><a href="dropdown_menu/dropdown_about/quality.html">Система качества</a></li>
+							<li><a href="dropdown_menu/dropdown_about/achievements.html">Достижения</a></li>
+							<li><a href="dropdown_menu/dropdown_about/socialactivity.html">Социальная активность</a></li>
+						</ul>
+					</li>
+					<li><a href="activity.html">Деятельность</a>
+						<ul>
+							<li><a href="dropdown_menu/dropdown_activity/projects.html">Проекты</a></li>
+							<li><a href="dropdown_menu/dropdown_activity/service.html">Услуги</a></li>
+						</ul>
+					</li>
+					<li><a href="management.html">Управление</a>
+						<ul>
+							<li><a href="dropdown_menu/dropdown_management/structure.html">Структура управления</a></li>
+							<li><a href="dropdown_menu/dropdown_management/members.html">Члены совета директоров</a></li>
+						</ul>
+					</li>
+					<li><a href="partners.html">Партнеры</a>
+						<ul>
+							<li><a href="dropdown_menu/dropdown_partners/reviews.html">Отзывы</a></li>
+						</ul>
+					</li>
+					<li><a href="contacts.html">Контакты</a></li>
+
+				</ul>
+			</nav>
+		</header>
+
+		<main>
 		
-		<div class="logo">
-			<img src="pictures/logo11.png" class="logo-img" alt="Logo">
-			<img src="pictures/logo22.png" class="logo2-img">
-		</div>
-		<nav>
-			<ul>
-				<li><a href="main.html">Главная</a></li>
-				<li><a href="aboutcompany.html">О компании</a></li>
-				<li><a href="#">Деятельность</a></li>
-				<li><a href="#">Управление</a></li>
-				<li><a href="#">Партнеры</a></li>
-				<li><a href="#">Контакты</a></li>
-			</ul>
-		</nav>
-	</header>
+			<div class="baner">
 
-	<main>
+				<img id="zoomImg" src="pictures/partners.jpg">
+			
+			</div>
 
-		<div class="baner">
-			<img src="pictures/mainscreen.jpg" class="baner">
-			<div class="overlay"></div>
-		</div>
+			<div class="text-begin"><h2>Наши партнеры</h2></div>
 
-		
-	</main>
+			<div class="partners">
+
+				<div class="partner">
+					<img src="pictures/partners-icons/1.png" alt="Partner 1">
+					<p>ПРАВИТЕЛЬСТВО МОСКВЫ</p>
+				  </div>
+				  <div class="partner">
+					<img src="pictures/partners-icons/2.png" alt="Partner 2">
+					<p>ДЕПАРТАМЕНТ СТРОИТЕЛЬСТВА ПРАВИТЕЛЬСТВА МОСКВЫ</p>
+				  </div>
+				  <div class="partner">
+					<img src="pictures/partners-icons/3.png" alt="Partner 3">
+					<p>МОСМЕТРОСТРОЙ</p>
+				  </div>
+				  <div class="partner">
+					<img src="pictures/partners-icons/4.png" alt="Partner 4">
+					<p>МОСИНЖПРОЕКТ</p>
+				  </div>
+				  <div class="partner">
+					<img src="pictures/partners-icons/5.png" alt="Partner 5">
+					<p>МИП СТРОЙ-1</p>
+				  </div>
+				  <div class="partner">
+					<img src="pictures/partners-icons/6.png" alt="Partner 6">
+					<p>ИНГЕОКОМ</p>
+				  </div>
+				  <div class="partner">
+					<img src="pictures/partners-icons/7.png" alt="Partner 7">
+					<p>МОСКОВСКИЙ МЕТРОПОЛИТЕН</p>
+				  </div>
+				  <div class="partner">
+					<img src="pictures/partners-icons/8.png" alt="Partner 8">
+					<p>МЕТРОПОЛИТЕН САНКТ-ПЕТЕРБУРГА</p>
+				  </div>
+				  <div class="partner">
+					<img src="pictures/partners-icons/9.png" alt="Partner 9">
+					<p>МЕТРОПОЛИТЕН НОВОСИБИРСКА</p>
+				  </div>
+				  <div class="partner">
+					<img src="pictures/partners-icons/10.png" alt="Partner 10">
+					<p>МЕТРОСТРОЙ СПБ</p>
+				  </div>
+				  <div class="partner">
+					<img src="pictures/partners-icons/11.png" alt="Partner 11">
+					<p>МЕТРОСТРОЙ СЕВЕРНОЙ СТОЛИЦЫ</p>
+				  </div>
+				  <div class="partner">
+					<img src="pictures/partners-icons/12.png" alt="Partner 12">
+					<p>МЕТРОГИПРОТРАНС</p>
+				  </div>
+				  <div class="partner">
+					<img src="pictures/partners-icons/13.png" alt="Partner 13">
+					<p>ГК «МОСПРОЕКТ-3»</p>
+				  </div>  
+				  <div class="partner">
+					<img src="pictures/partners-icons/14.png" alt="Partner 14">
+					<p>ЛЕНМЕТРОГИПРОТРАНС</p>
+				  </div>  
+				  <div class="partner">
+					<img src="pictures/partners-icons/15.png" alt="Partner 15">
+					<p>TATNEFT</p>
+				  </div>
+				  <div class="partner">
+					<img src="pictures/partners-icons/16.png" alt="Partner 16">
+					<p>TECHNIP</p>
+				  </div> 
+				  <div class="partner">
+					<img src="pictures/partners-icons/17.png" alt="Partner 17">
+					<p>IMABE IBERICA</p>
+				  </div> 
+				  <div class="partner">
+					<img src="pictures/partners-icons/18.png" alt="Partner 18">
+					<p>ABB</p>
+				  </div> 
+				  <div class="partner">
+					<img src="pictures/partners-icons/19.png" alt="Partner 19">
+					<p>THYSSENKRUPP</p>
+				  </div> 
+				  <div class="partner">
+					<img src="pictures/partners-icons/20.png" alt="Partner 20">
+					<p>SCANIA AB</p>
+				  </div> 
+				  <div class="partner">
+					<img src="pictures/partners-icons/21.png" alt="Partner 21">
+					<p>OTIS</p>
+				  </div> 
+				  <div class="partner">
+					<img src="pictures/partners-icons/22.png" alt="Partner 22">
+					<p>CATERPILLAR INC.</p>
+				  </div> 
+				  <div class="partner">
+					<img src="pictures/partners-icons/23.png" alt="Partner 23">
+					<p>РОСНЕФТЬ</p>
+				  </div> 
+				  <div class="partner">
+					<img src="pictures/partners-icons/24.png" alt="Partner 24">
+					<p>ЛУКОЙЛ</p>
+				  </div> 
+				  <div class="partner">
+					<img src="pictures/partners-icons/25.png" alt="Partner 25">
+					<p>ГАЗПРОМ</p>
+				  </div>
+				  <div class="partner">
+					<img src="pictures/partners-icons/26.png" alt="Partner 26">
+					<p>РЖД</p>
+				  </div>  
+				  <div class="partner">
+					<img src="pictures/partners-icons/27.png" alt="Partner 27">
+					<p>ТРАНССТРОЙ</p>
+				  </div>  
+				  <div class="partner">
+					<img src="pictures/partners-icons/28.png" alt="Partner 28">
+					<p>МОСВОДОКАНАЛ</p>
+				  </div> 
+				  <div class="partner">
+					<img src="pictures/partners-icons/29.png" alt="Partner 29">
+					<p>SCHINDLER</p>
+				  </div>   
+				  <div class="partner">
+					<img src="pictures/partners-icons/30.png" alt="Partner 30">
+					<p>СОФИЙСКИЙ МЕТРОПОЛИТЕН</p>
+				  </div>   
 
 
-	<footer>
 
-		<h1>hello</h1>
+			</div>
 
-	</footer>
+		</main>
 
+		<footer>
+
+			<div>
+				<h5>© 1933 – 2023 АО «ВО «Машиноимпорт»</h5>
+				<h5>© 1933 – 2023 «VO «Machinoimport» AO</h5>
+			</div>
+			
+			<h5><a href="#">Положение о защите персональных данных</a></h5>
+
+		</footer>
+
+	</div>
+
+	<script src="js/fade.js" type="text/javascript"></script>
+	<script src="js/swiperpartners.js" type="text/javascript"></script>
 
 </body>
 </html>

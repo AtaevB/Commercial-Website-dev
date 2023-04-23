@@ -7,6 +7,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/maincss.css">
 
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+  
+  	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
 	<style>
 
 		@font-face {
@@ -19,6 +23,11 @@
     	src: url(fonts/Roboto-Thin.ttf); 
    		}
 
+		@font-face{
+		font-family: OswaldBold;
+		src: url(fonts/Oswald-Bold.ttf);
+		}	
+
 	</style>
 	
 	
@@ -26,56 +35,116 @@
 
 <body>
 
-	<header>
-		
-		<div class="logo">
-			<img src="pictures/logo11.png" class="logo-img" alt="Logo">
-			<img src="pictures/logo22.png" class="logo2-img">
-		</div>
-		<nav>
-			<ul>
-				<li><a href="main.html">Главная</a></li>
-				<li><a href="aboutcompany.html">О компании</a></li>
-				<li><a href="activity.html">Деятельность</a></li>
-				<li><a href="management.html">Управление</a></li>
-				<li><a href="partners.html">Партнеры</a></li>
-				<li><a href="contacts.html">Контакты</a></li>
-			</ul>
-		</nav>
-	</header>
+	<div class="page">
 
-	<main>
+		<header id="main-header" class="translucent">
+				
+			<div class="logo">
+				<div id="rotatelogo"><a href="main.html"><img src="pictures/logo11.png" class="logo-img" alt="Logo"></a></div>
+				<a href="main.html"><img src="pictures/logo22.png" class="logo2-img"></a>
+			</div>
+			<nav>
+				<ul id="main-menu">
+					<li><a href="main.html">Главная</a></li>
+					<li><a href="aboutcompany.html">О компании</a>
+						<ul>
+							<li><a href="dropdown_menu/dropdown_about/history.html">История</a></li>
+							<li><a href="dropdown_menu/dropdown_about/archive.html">Архив новостей</a></li>
+							<li><a href="dropdown_menu/dropdown_about/strategy.html">Стратегия и перспективы</a></li>
+							<li><a href="dropdown_menu/dropdown_about/quality.html">Система качества</a></li>
+							<li><a href="dropdown_menu/dropdown_about/achievements.html">Достижения</a></li>
+							<li><a href="dropdown_menu/dropdown_about/socialactivity.html">Социальная активность</a></li>
+						</ul>
+					</li>
+					<li><a href="activity.html">Деятельность</a>
+						<ul>
+							<li><a href="dropdown_menu/dropdown_activity/projects.html">Проекты</a></li>
+							<li><a href="dropdown_menu/dropdown_activity/service.html">Услуги</a></li>
+						</ul>
+					</li>
+					<li><a href="management.html">Управление</a>
+						<ul>
+							<li><a href="dropdown_menu/dropdown_management/structure.html">Структура управления</a></li>
+							<li><a href="dropdown_menu/dropdown_management/members.html">Члены совета директоров</a></li>
+						</ul>
+					</li>
+					<li><a href="partners.html">Партнеры</a>
+						<ul>
+							<li><a href="dropdown_menu/dropdown_partners/reviews.html">Отзывы</a></li>
+						</ul>
+					</li>
+					<li><a href="contacts.html">Контакты</a></li>
 
-		<div class="baner">
-			<img src="pictures/mainscreen.jpg" class="baner">
-			<div class="overlay"></div>
-		</div>
+				</ul>
+			</nav>
+		</header>
 
-		<div class="discription">
+		<main>
 
-			<h1 align="center">СОЕДИНЯЯ СТРАНЫ, СОЕДИНЯЯ ЭПОХИ</h1>
+			<!-- Slider main container -->
+			<div class="swiper">
+				<!-- Additional required wrapper -->
+				<div class="swiper-wrapper">
+				<!-- Slides -->
+				<div class="swiper-slide">
+					<img src="pictures/mainscreen.jpg">
+					<h1>АКЦИОНЕРНОЕ ОБЩЕСТВО «ВНЕШНЕЭКОНОМИЧЕСКОЕ ОБЪЕДИНЕНИЕ «МАШИНОИМПОРТ»</h1>
+				</div>
+				<div class="swiper-slide">
+					<img src="pictures/slider2.jpg">
+					<h1>АО «ВО «МАШИНОИМПОРТ» УСПЕШНО РЕАЛИЗОВАЛО БОЛЕЕ 200 ПРОЕКТОВ В 28-МИ СТРАНАХ МИРА</h1>
+				</div>
+				<div class="swiper-slide">
+					<img src="pictures/slider3.jpg">
+					<h1>ВЕДЕТ ОТСЧЕТ СВОЕЙ ИСТОРИИ С 31 ОКТЯБРЯ 1933 ГОДА</h1>
+				</div>
+				
+				
+				</div>
+				<!-- If we need pagination -->
+				
+			
+				<!-- If we need navigation buttons -->
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+			
+				<!-- If we need scrollbar -->
+				<div class="swiper-scrollbar"></div>
+			</div>
 
-			<h2 align="center">АО «ВО «Машиноимпорт» образовано в 1933 году, специализируется  на оказании содействия в строительстве предприятий топливно-энергетического комплекса как на территории Российской Федерации, так и за рубежом,  импорте и экспорте комплектного и разрозненного оборудования и запасных частей, экспорте сырьевых товаров. За свою долгую историю АО «ВО «МАШИНОИМПОРТ» успешно реализовало более 200 проектов в 28-ми странах мира.</h3>
+			<div class="discription">
 
-		</div>
+				<h1 align="center">СОЕДИНЯЯ СТРАНЫ, СОЕДИНЯЯ ЭПОХИ</h1>
 
-		<div class = "news">
+				<h2 align="center">АО «ВО «Машиноимпорт» образовано в 1933 году, специализируется  на оказании содействия в строительстве предприятий топливно-энергетического комплекса как на территории Российской Федерации, так и за рубежом,  импорте и экспорте комплектного и разрозненного оборудования и запасных частей, экспорте сырьевых товаров. За свою долгую историю АО «ВО «МАШИНОИМПОРТ» успешно реализовало более 200 проектов в 28-ми странах мира.</h3>
 
-			<h1>НОВОСТИ</h1>
+			</div>
 
-		</div>
-		
+			<div class = "news">
 
-		
-	</main>
+				
+			</div>
+			
+
+			
+		</main>
 
 
-	<footer>
+		<footer>
 
-		<h1>hello</h1>
+			<div>
+				<h5>© 1933 – 2023 АО «ВО «Машиноимпорт»</h5>
+				<h5>© 1933 – 2023 «VO «Machinoimport» AO</h5>
+			</div>
+			
+			<h5><a href="#">Положение о защите персональных данных</a></h5>
 
-	</footer>
+		</footer>
 
+	</div>
+
+	<script src="js/fade.js" type="text/javascript"></script>
+	<script src="js/swiper.js" type="text/javascript"></script>
 
 </body>
 </html>

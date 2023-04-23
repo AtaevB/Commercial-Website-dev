@@ -42,7 +42,7 @@ header {
 	width: 70px;
 	margin: 0px;
 	transform-origin: center;
-	position: relative; /* or "static" */
+	position: relative; 
     top: 0;
     left: 0;
 	transition: transform 0.5s;

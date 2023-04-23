@@ -19,6 +19,11 @@
     	src: url(fonts/Roboto-Thin.ttf); 
    		}
 
+		@font-face{
+		font-family: OswaldBold;
+		src: url(fonts/Oswald-Bold.ttf);
+		}
+
 	</style>
 	
 	
@@ -26,41 +31,87 @@
 
 <body>
 
-	<header>
+	<div class="page">
+		<header id="main-header" class="translucent">
+				
+			<div class="logo">
+				<div id="rotatelogo"><a href="main.html"><img src="pictures/logo11.png" class="logo-img" alt="Logo"></a></div>
+				<a href="main.html"><img src="pictures/logo22.png" class="logo2-img"></a>
+			</div>
+			<nav>
+				<ul id="main-menu">
+					<li><a href="main.html">Главная</a></li>
+					<li><a href="aboutcompany.html">О компании</a>
+						<ul>
+							<li><a href="dropdown_menu/dropdown_about/history.html">История</a></li>
+							<li><a href="dropdown_menu/dropdown_about/archive.html">Архив новостей</a></li>
+							<li><a href="dropdown_menu/dropdown_about/strategy.html">Стратегия и перспективы</a></li>
+							<li><a href="dropdown_menu/dropdown_about/quality.html">Система качества</a></li>
+							<li><a href="dropdown_menu/dropdown_about/achievements.html">Достижения</a></li>
+							<li><a href="dropdown_menu/dropdown_about/socialactivity.html">Социальная активность</a></li>
+						</ul>
+					</li>
+					<li><a href="activity.html">Деятельность</a>
+						<ul>
+							<li><a href="dropdown_menu/dropdown_activity/projects.html">Проекты</a></li>
+							<li><a href="dropdown_menu/dropdown_activity/service.html">Услуги</a></li>
+						</ul>
+					</li>
+					<li><a href="management.html">Управление</a>
+						<ul>
+							<li><a href="dropdown_menu/dropdown_management/structure.html">Структура управления</a></li>
+							<li><a href="dropdown_menu/dropdown_management/members.html">Члены совета директоров</a></li>
+						</ul>
+					</li>
+					<li><a href="partners.html">Партнеры</a>
+						<ul>
+							<li><a href="dropdown_menu/dropdown_partners/reviews.html">Отзывы</a></li>
+						</ul>
+					</li>
+					<li><a href="contacts.html">Контакты</a></li>
+
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+
+			<div class="baner">
+
+				<img id="zoomImg" src="pictures/management1.jpg">
+				<!-- <div class="center-text"><h1>АО «ВО «Машиноимпорт» образовано в 1933 году, специализируется  на оказании содействия в строительстве предприятий топливно-энергетического комплекса,  импорте и экспорте комплектного и разрозненного оборудования и запасных частей, экспорте сырьевых товаров.</h1>
+				</div>	 -->
+			</div>
+
+			<div class="text-begin"><h2>Управление</h2></div>
+
+			<div class="management-info">
+			
+				<h3>Акционерное общество, как и вообще юридическое лицо, имеет необходимость в наличии органов управления, обеспечивающих управление в самом обществе и взаимодействие с другими лицами – государственными органами, организациями, фирмами, компаниями и физическими лицами. Общее собрание акционеров общества, Совет директров и исполнительный орган и представляют собой систему управления акционерным обществом.</h3>
+				<h3>Акционерное общество «Внешнеэкономическое объединение «Машиноимпорт» (АО «ВО «Машиноимпорт») в соответствии с Федеральным законом «Об акционерных обществах» и Уставом общества имеет трехуровневую систему корпоративного управления, представленную Общим собранием акционеров, Советом директоров и Генеральным директором.</h3>
+				<h3>Высшим органом управления является Общеее собрание акционеров. Общее собрание акционеров выражает волю и своими решениями определяет в рамках утвержденного Устава деятельность АО «ВО «Машиноимпорт».</h3>
+				<h3>Общее руководство деятельностью АО «ВО «Машиноимпорт», формирование его хозяйственной «политики» осуществляет Совет директров, в компетенцию которого входит решение вопросов, не отнесенных к компетенции Общего собрания акционеров и единоличного исполнительного органа. Возглавляет Совет директоров Председатель Совета директоров (Президент Общества). Совет директров состоит из 5 человек.</h3>
+				<h3>Руководство текущей хозяйственной деятельностью осуществляет единоличный исполнительный орган в лице Генерального директора, который подотчетен Совету директров и Общему собранию акционеров.</h3>
+				<h3>Контроль финансово-хозяйственной деятельности осуществляется ревизионной комиссией, в составе трех человек, которые избираются Общим собранием акционеров на срок до следующего годового Общего собрания акционеров.</h3>
+			
+			</div>
+			
+		</main>
+
+
+		<footer>
+
+			<div>
+				<h5>© 1933 – 2023 АО «ВО «Машиноимпорт»</h5>
+				<h5>© 1933 – 2023 «VO «Machinoimport» AO</h5>
+			</div>
+			
+			<h5><a href="#">Положение о защите персональных данных</a></h5>
+
+		</footer>
+	</div>
 		
-		<div class="logo">
-			<img src="pictures/logo11.png" class="logo-img" alt="Logo">
-			<img src="pictures/logo22.png" class="logo2-img">
-		</div>
-		<nav>
-			<ul>
-				<li><a href="main.html">Главная</a></li>
-				<li><a href="aboutcompany.html">О компании</a></li>
-				<li><a href="#">Деятельность</a></li>
-				<li><a href="#">Управление</a></li>
-				<li><a href="#">Партнеры</a></li>
-				<li><a href="#">Контакты</a></li>
-			</ul>
-		</nav>
-	</header>
-
-	<main>
-
-		<div class="baner">
-			<img src="pictures/mainscreen.jpg" class="baner">
-			<div class="overlay"></div>
-		</div>
-
-		
-	</main>
-
-
-	<footer>
-
-		<h1>hello</h1>
-
-	</footer>
-
-
+	<script src="js/fade.js" type="text/javascript"></script>
+	
 </body>
 </html>
