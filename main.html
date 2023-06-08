@@ -2,7 +2,7 @@
 <html>
 <head>
 
-	<title>Машиноимпорт</title>
+	<title>Главная</title>
 	<meta charset = "UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/maincss.css">
@@ -49,7 +49,6 @@
 					<li><a href="aboutcompany.html">О компании</a>
 						<ul>
 							<li><a href="dropdown_menu/dropdown_about/history.html">История</a></li>
-							<li><a href="dropdown_menu/dropdown_about/archive.html">Архив новостей</a></li>
 							<li><a href="dropdown_menu/dropdown_about/strategy.html">Стратегия и перспективы</a></li>
 							<li><a href="dropdown_menu/dropdown_about/quality.html">Система качества</a></li>
 							<li><a href="dropdown_menu/dropdown_about/achievements.html">Достижения</a></li>
@@ -80,11 +79,11 @@
 
 		<main>
 
-			<!-- Slider main container -->
+			<!-- Основной контейнер свайпера -->
 			<div class="swiper">
-				<!-- Additional required wrapper -->
+				<!-- Обёртка для удобства -->
 				<div class="swiper-wrapper">
-				<!-- Slides -->
+				<!-- Слайды -->
 				<div class="swiper-slide">
 					<img src="pictures/mainscreen.jpg">
 					<h1>АКЦИОНЕРНОЕ ОБЩЕСТВО «ВНЕШНЕЭКОНОМИЧЕСКОЕ ОБЪЕДИНЕНИЕ «МАШИНОИМПОРТ»</h1>
@@ -100,15 +99,7 @@
 				
 				
 				</div>
-				<!-- If we need pagination -->
 				
-			
-				<!-- If we need navigation buttons -->
-				<div class="swiper-button-prev"></div>
-				<div class="swiper-button-next"></div>
-			
-				<!-- If we need scrollbar -->
-				<div class="swiper-scrollbar"></div>
 			</div>
 
 			<div class="discription">
@@ -119,12 +110,24 @@
 
 			</div>
 
-			<div class = "news">
+			<div id="news">
+
+				<!-- <div class="news-container">
+
+					<div class="text">
+
+						<h2>Название новости</h2>
+						<h4>01.01.2001</h4>
+						<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
+					</div>
+
+					<img src="pictures/partners.jpg">
+					
+
+				</div> -->
 
 				
 			</div>
-			
-
 			
 		</main>
 
@@ -136,7 +139,7 @@
 				<h5>© 1933 – 2023 «VO «Machinoimport» AO</h5>
 			</div>
 			
-			<h5><a href="#">Положение о защите персональных данных</a></h5>
+			<h5><a href="personaldata.html">Положение о защите персональных данных</a></h5>
 
 		</footer>
 
@@ -144,6 +147,7 @@
 
 	<script src="js/fade.js" type="text/javascript"></script>
 	<script src="js/swiper.js" type="text/javascript"></script>
+	<script src="js/add.js" type="text/javascript"></script>	
 
 </body>
 </html>
