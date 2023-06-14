@@ -63,12 +63,6 @@ header {
 
 }
 
-@media only screen and (max-width: 1600px) {
-	.logo2-img {
-	  display: none;
-	}
-  }
-  
   nav > ul {
 	position: relative;
 	list-style: none;
@@ -113,37 +107,6 @@ header {
   nav > ul > li > a:hover::after {
 	opacity: 1;
   }
-
-  @media only screen and (max-width: 1410px) {
-	nav li:nth-child(n+6) {
-	  display: none;
-	}
-  }
-
-  @media only screen and (max-width: 1220px) {
-	nav li:nth-child(n+5) {
-	  display: none;
-	}
-  }
-
-  @media only screen and (max-width: 1030px) {
-	nav li:nth-child(n+4) {
-	  display: none;
-	}
-  }
-
-  @media only screen and (max-width: 840px) {
-	nav li:nth-child(n+3) {
-	  display: none;
-	}
-  }
-
-  @media only screen and (max-width: 650px) {
-	nav li:nth-child(n+2) {
-	  display: none;
-	}
-  }
-
   
   nav > ul > li > ul {
 	position: absolute;

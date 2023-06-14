@@ -1,0 +1,147 @@
+@media only screen and (max-width: 1600px) {
+	.logo2-img {
+	  display: none;
+	}
+    nav ul li a::after{
+        top: 90px;
+    } 
+  }
+
+@media only screen and (max-width: 1410px) {
+	nav ul li a {
+	  font-size: 15px;
+	}
+    nav ul li a::after{
+        top: 83px;
+    } 
+    nav > ul > li > ul > li > a {
+      font-size: 15px;
+  }
+  }
+
+  @media only screen and (max-width: 1220px) {
+	nav ul li a {
+	  font-size: 13px;
+	}
+    nav ul li a::after{
+        top: 81px;
+    }
+    nav > ul > li > ul > li > a {
+      font-size: 13px;
+  }
+  nav ul li ul{
+    margin-left: -15%;
+}
+  }
+
+  @media only screen and (max-width: 1067px) {
+	nav ul li a {
+	  font-size: 12px;
+	}
+    nav ul li {
+        padding-right: 10px;
+    }
+    nav ul li a::after{
+        top: 81px;
+    } 
+    nav ul li ul{
+      margin-left: -5%;
+      width: 200px;
+  }
+  }
+
+  @media only screen and (max-width: 840px) {
+    nav > ul{
+    padding-left: 0;
+    position: absolute;
+    left: 30%;
+    top: 100%;
+    width: 40%;
+    height: 540px;
+    background-color: #001f3f;
+    list-style: none;
+    opacity: 0;
+    transition: 0.4s ease;
+    visibility: hidden;
+    }
+    nav > ul > li {
+      width: 100%;
+      padding: 0;
+      text-align: center;
+    }
+    nav > ul > li > a {
+      font-size: 15px;
+    }
+    header{
+      justify-content: center;
+      position: absolute;
+    }
+    .logo2-img{
+      display: none;
+    }
+    .logo-img{
+      justify-content: center;
+      align-items: center;
+    }
+    .logo{
+      padding: 0px;
+      margin: 5px;
+      justify-content: center;
+      align-items: center;
+    }
+    .logo:hover + nav > ul,
+    nav > ul:hover {
+      visibility: visible;
+      opacity: 1;
+    }
+    nav > ul:hover {
+      pointer-events: auto; 
+    }
+    nav > ul > li > a::after{
+      top: 81px;
+      transform: scaleX(1.07);
+  } 
+
+    nav > ul > li > ul{
+      left: -50%; 
+      position: absolute;
+      right: auto;
+      transform: translateX(-50%);
+      top: 81px;
+      margin: 0;
+      width: 100%;
+      height: fit-content;
+    }
+    }
+
+    @media only screen and (max-width: 600px){
+      nav > ul > li > ul{
+        left: -40%; 
+      }
+    }
+    
+    @media only screen and (max-width: 450px){
+      nav > ul > li > ul{
+        left: -30%;
+        width: 110%; 
+      }
+    }
+
+    @media only screen and (max-width: 415px){
+      nav > ul > li > ul{
+        left: -30%;
+        width: 130%; 
+      }
+    }
+
+    @media only screen and (max-width: 390px){
+      nav > ul {
+        width: 99%;
+        left: 0.3%;
+      }
+      nav > ul > li > ul{
+        left: 50%;
+        width: 100%; 
+        z-index: 999;
+      }
+    }

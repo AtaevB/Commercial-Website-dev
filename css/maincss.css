@@ -63,11 +63,6 @@ header {
 
 }
 
-@media only screen and (max-width: 1600px) {
-	.logo2-img {
-	  display: none;
-	}
-  }
   
   nav > ul {
 	position: relative;
@@ -114,36 +109,6 @@ header {
 	opacity: 1;
   }
 
-  @media only screen and (max-width: 1410px) {
-	nav li:nth-child(n+6) {
-	  display: none;
-	}
-  }
-
-  @media only screen and (max-width: 1220px) {
-	nav li:nth-child(n+5) {
-	  display: none;
-	}
-  }
-
-  @media only screen and (max-width: 1030px) {
-	nav li:nth-child(n+4) {
-	  display: none;
-	}
-  }
-
-  @media only screen and (max-width: 840px) {
-	nav li:nth-child(n+3) {
-	  display: none;
-	}
-  }
-
-  @media only screen and (max-width: 650px) {
-	nav li:nth-child(n+2) {
-	  display: none;
-	}
-  }
-
   
   nav > ul > li > ul {
 	position: absolute;
@@ -158,6 +123,7 @@ header {
 	transition: 0.3s ease;
 	visibility: hidden;
 	margin-left: -12%;
+	z-index: 999;
   }
   
   nav > ul > li > ul > li {
@@ -379,10 +345,4 @@ footer a{
 	color: #fff;
 	text-align: center;
 	font-family: OswaldBold;
-  }
-
-  @media only screen and (max-width: 1200px) {
-	.swiper-slide h1 {
-	  display: none;
-	}
   }

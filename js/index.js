@@ -25,7 +25,7 @@ async function getSelectedNews(title) {
             <h2>${title}</h2>
         </div>
 
-        <div class="text-wrapper">
+        <div class="text">
                 <h3>${text}</h3>
         </div>
 
